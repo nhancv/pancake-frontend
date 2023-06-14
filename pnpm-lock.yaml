@@ -772,6 +772,9 @@ importers:
       typescript:
         specifier: ^5.1.3
         version: 5.1.3
+      url-parse:
+        specifier: ^1.5.10
+        version: 1.5.10
       uuid:
         specifier: ^8.0.0
         version: 8.3.2
@@ -1232,13 +1235,13 @@ importers:
         version: 5.1.3
       viem:
         specifier: ^1.0.7
-        version: 1.0.7(typescript@5.1.3)(zod@3.21.4)
+        version: 1.2.9(typescript@5.1.3)(zod@3.21.4)
       vitest:
         specifier: ^0.27.2
         version: 0.27.2
       wagmi:
         specifier: ^1.2.0
-        version: 1.2.0(encoding@0.1.13)(react-dom@18.2.0)(react@18.2.0)(typescript@5.1.3)(viem@1.0.7)
+        version: 1.3.4(encoding@0.1.13)(react-dom@18.2.0)(react@18.2.0)(typescript@5.1.3)(viem@1.2.9)(zod@3.21.4)
 
   packages/smart-router:
     dependencies:
@@ -1783,6 +1786,9 @@ importers:
       '@types/styled-components':
         specifier: ^5.1.26
         version: 5.1.26
+      '@types/url-parse':
+        specifier: ^1.4.8
+        version: 1.4.8
       bignumber.js:
         specifier: ^9.0.0
         version: 9.1.1
@@ -1795,6 +1801,9 @@ importers:
       swr:
         specifier: ^2.1.3
         version: 2.1.5(react@18.2.0)
+      url-parse:
+        specifier: ^1.5.10
+        version: 1.5.10
       viem:
         specifier: ^1.2.9
         version: 1.2.9(typescript@5.1.3)(zod@3.21.4)
@@ -1921,7 +1930,7 @@ packages:
   /@0xsquid/sdk@1.6.3(encoding@0.1.13)(typescript@5.1.3):
     resolution: {integrity: sha512-PgiJpI65Wt1hUdMllpW4JUKqLrt97RaLJ1gL75BTduNTibnnnM4e1VjhAOnpAXk7dkE2CDOm2vFaseLbOfmGrQ==}
     dependencies:
-      '@release-it/conventional-changelog': github.com/release-it/conventional-changelog/a27a3ab10622b7f42eaad264c352122fde16c28a(release-it@15.10.3)
+      '@release-it/conventional-changelog': github.com/release-it/conventional-changelog/7c90551bf556c479e1a40b79609b1f500fb8bee6(release-it@15.10.3)
       axios: 0.27.2
       ethers: 5.7.2
       release-it: 15.10.3(encoding@0.1.13)(typescript@5.1.3)
@@ -10369,6 +10378,10 @@ packages:
   /@types/unist@2.0.6:
     resolution: {integrity: sha512-PBjIUxZHOuj0R15/xuwJYjFi+KZdNFrehocChv4g5hu6aFroHue8m0lBP0POdK2nKzbw0cgV1mws8+V/JAcEkQ==}
 
+  /@types/url-parse@1.4.8:
+    resolution: {integrity: sha512-zqqcGKyNWgTLFBxmaexGUKQyWqeG7HjXj20EuQJSJWwXe54BjX0ihIo5cJB9yAQzH8dNugJ9GvkBYMjPXs/PJw==}
+    dev: true
+
   /@types/use-sync-external-store@0.0.3:
     resolution: {integrity: sha512-EwmlvuaxPNej9+T4v5AuBPJa2x2UOJVdjCtDHgcDqitUeOtjnJKJ+apYjVcAoBEMjKW1VVFGZLUb5+qqa09XFA==}
 
@@ -18665,6 +18678,7 @@ packages:
   /jayson@3.7.0:
     resolution: {integrity: sha512-tfy39KJMrrXJ+mFcMpxwBvFDetS8LAID93+rycFglIQM4kl3uNR3W4lBLE/FFhsoUCEox5Dt2adVpDm/XtebbQ==}
     engines: {node: '>=8'}
+    hasBin: true
     dependencies:
       '@types/connect': 3.4.35
       '@types/node': 12.20.55
@@ -22517,6 +22531,7 @@ packages:
   /qrcode@1.5.3:
     resolution: {integrity: sha512-puyri6ApkEHYiVl4CFzo1tDkAZ+ATcnbJrJ6RiBM1Fhctdn/ix9MTE3hRph33omisEbC/2fcfemsseiKgBPKZg==}
     engines: {node: '>=10.13.0'}
+    hasBin: true
     dependencies:
       dijkstrajs: 1.0.2
       encode-utf8: 1.0.3
@@ -22573,7 +22588,6 @@ packages:
 
   /querystringify@2.2.0:
     resolution: {integrity: sha512-FIqgj2EUvTa7R50u0rGsyTftzjYmv/a3hO345bZNrqabNqjtgiDMgmo4mkUjd+nzU5oF3dClKqFIPUKybUyqoQ==}
-    dev: true
 
   /queue-microtask@1.2.3:
     resolution: {integrity: sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==}
@@ -23425,7 +23439,6 @@ packages:
 
   /requires-port@1.0.0:
     resolution: {integrity: sha512-KigOCHcocU3XODJxsu8i/j8T9tzT4adHiecwORRQ0ZZFcp7ahwXuRU1m+yuO90C5ZUyGeGfocHDI14M3L3yDAQ==}
-    dev: true
 
   /reselect@4.1.7:
     resolution: {integrity: sha512-Zu1xbUt3/OPwsXL46hvOOoQrap2azE7ZQbokq61BQfiXvhewsKDwhMeZjTX9sX0nvw1t/U5Audyn1I9P/m9z0A==}
@@ -23757,7 +23770,6 @@ packages:
   /semver@7.5.1:
     resolution: {integrity: sha512-Wvss5ivl8TMRZXXESstBA4uR5iXgEN/VC5/sOcuXdVLzcdkz4HWetIoRfG5gb5X+ij/G9rw9YoGn3QoQ8OCSpw==}
     engines: {node: '>=10'}
-    hasBin: true
     dependencies:
       lru-cache: 6.0.0
 
@@ -25729,7 +25741,6 @@ packages:
     dependencies:
       querystringify: 2.2.0
       requires-port: 1.0.0
-    dev: true
 
   /url@0.11.0:
     resolution: {integrity: sha512-kbailJa29QrtXnxgq+DdCEGlbTeYM2eJUxsz6vjZavrCYPMIFHMKQmSKYAIuUK2i7hgPm28a8piX5NTUtM/LKQ==}
@@ -27064,14 +27075,14 @@ packages:
   /zwitch@1.0.5:
     resolution: {integrity: sha512-V50KMwwzqJV0NpZIZFwfOD5/lyny3WlSzRiXgA0G7VUnRlqttta1L6UQIHzd6EuBY/cHGfwTIck7w1yH6Q5zUw==}
 
-  github.com/release-it/conventional-changelog/a27a3ab10622b7f42eaad264c352122fde16c28a(release-it@15.10.3):
-    resolution: {tarball: https://codeload.github.com/release-it/conventional-changelog/tar.gz/a27a3ab10622b7f42eaad264c352122fde16c28a}
-    id: github.com/release-it/conventional-changelog/a27a3ab10622b7f42eaad264c352122fde16c28a
+  github.com/release-it/conventional-changelog/7c90551bf556c479e1a40b79609b1f500fb8bee6(release-it@15.10.3):
+    resolution: {commit: 7c90551bf556c479e1a40b79609b1f500fb8bee6, repo: git+ssh://git@github.com/release-it/conventional-changelog.git, type: git}
+    id: github.com/release-it/conventional-changelog/7c90551bf556c479e1a40b79609b1f500fb8bee6
     name: '@release-it/conventional-changelog'
-    version: 6.0.0
-    engines: {node: '>=14'}
+    version: 7.0.0
+    engines: {node: '>=16'}
     peerDependencies:
-      release-it: ^15.4.1
+      release-it: ^16.0.0
     dependencies:
       concat-stream: 2.0.0
       conventional-changelog: 4.0.0
