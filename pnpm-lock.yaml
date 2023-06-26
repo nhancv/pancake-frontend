@@ -18678,7 +18678,6 @@ packages:
   /jayson@3.7.0:
     resolution: {integrity: sha512-tfy39KJMrrXJ+mFcMpxwBvFDetS8LAID93+rycFglIQM4kl3uNR3W4lBLE/FFhsoUCEox5Dt2adVpDm/XtebbQ==}
     engines: {node: '>=8'}
-    hasBin: true
     dependencies:
       '@types/connect': 3.4.35
       '@types/node': 12.20.55
@@ -22531,7 +22530,6 @@ packages:
   /qrcode@1.5.3:
     resolution: {integrity: sha512-puyri6ApkEHYiVl4CFzo1tDkAZ+ATcnbJrJ6RiBM1Fhctdn/ix9MTE3hRph33omisEbC/2fcfemsseiKgBPKZg==}
     engines: {node: '>=10.13.0'}
-    hasBin: true
     dependencies:
       dijkstrajs: 1.0.2
       encode-utf8: 1.0.3
@@ -23770,6 +23768,7 @@ packages:
   /semver@7.5.1:
     resolution: {integrity: sha512-Wvss5ivl8TMRZXXESstBA4uR5iXgEN/VC5/sOcuXdVLzcdkz4HWetIoRfG5gb5X+ij/G9rw9YoGn3QoQ8OCSpw==}
     engines: {node: '>=10'}
+    hasBin: true
     dependencies:
       lru-cache: 6.0.0
 
@@ -27076,7 +27075,7 @@ packages:
     resolution: {integrity: sha512-V50KMwwzqJV0NpZIZFwfOD5/lyny3WlSzRiXgA0G7VUnRlqttta1L6UQIHzd6EuBY/cHGfwTIck7w1yH6Q5zUw==}
 
   github.com/release-it/conventional-changelog/7c90551bf556c479e1a40b79609b1f500fb8bee6(release-it@15.10.3):
-    resolution: {commit: 7c90551bf556c479e1a40b79609b1f500fb8bee6, repo: git+ssh://git@github.com/release-it/conventional-changelog.git, type: git}
+    resolution: {tarball: https://codeload.github.com/release-it/conventional-changelog/tar.gz/7c90551bf556c479e1a40b79609b1f500fb8bee6}
     id: github.com/release-it/conventional-changelog/7c90551bf556c479e1a40b79609b1f500fb8bee6
     name: '@release-it/conventional-changelog'
     version: 7.0.0
