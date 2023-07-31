@@ -59,6 +59,7 @@ const config = {
     '@pancakeswap/localization',
     '@pancakeswap/hooks',
     '@pancakeswap/utils',
+    '@pancakeswap/ifos',
   ],
   reactStrictMode: true,
   swcMinify: true,
@@ -185,7 +186,7 @@ const config = {
         source: '/images/tokens/:address',
         destination: 'https://tokens.pancakeswap.finance/images/:address',
         permanent: false,
-      }
+      },
     ]
   },
   webpack: (webpackConfig, { webpack, isServer }) => {
