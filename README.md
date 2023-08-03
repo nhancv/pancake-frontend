@@ -39,6 +39,14 @@ pnpm build
 # start the application after build
 pnpm start
 ```
+
+**Vercel Settings**
+- Build & Development Settings:
+  - Framework Preset: `Next.js`
+  - Build Command: Override -> `cd ../ && pnpm build`
+  - Install Command: Override -> `cd ../ && pnpm install`
+- Root Directory: `apps/web`
+
 </details>
 
 ## `apps/aptos`
