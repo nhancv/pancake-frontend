@@ -30,6 +30,7 @@ const AddLiquidityPage = () => {
   // Initial prefer farm type if there is a farm for the pair
   const preferFarmType = useMemo(() => {
     if (!currencyA || !currencyB || !router.isReady) return undefined
+    return { type: SELECTOR_TYPE.V2 }
 
     const hasV3Farm = farmV3Public?.farmsWithPrice.find(
       (farm) =>

@@ -68,7 +68,7 @@ export const ResponsiveTwoColumns = styled.div`
   }
 `
 
-const selectTypeAtom = atom(SELECTOR_TYPE.V3)
+const selectTypeAtom = atom(SELECTOR_TYPE.V2)
 
 interface UniversalAddLiquidityPropsType {
   currencyIdA: string
@@ -295,16 +295,16 @@ export function UniversalAddLiquidity({
                   />
                 )}
 
-              {((isV2 && selectorType !== SELECTOR_TYPE.V3) || selectorType === SELECTOR_TYPE.V2) && (
-                <V2Selector
-                  isStable={Boolean(stableConfig.stableSwapConfig)}
-                  selectorType={selectorType}
-                  handleFeePoolSelect={({ type }) => {
-                    // keep using state instead of replacing url in UniversalLiquidity
-                    handleFeePoolSelect({ type })
-                  }}
-                />
-              )}
+              {/* {((isV2 && selectorType !== SELECTOR_TYPE.V3) || selectorType === SELECTOR_TYPE.V2) && ( */}
+              {/*   <V2Selector */}
+              {/*     isStable={Boolean(stableConfig.stableSwapConfig)} */}
+              {/*     selectorType={selectorType} */}
+              {/*     handleFeePoolSelect={({ type }) => { */}
+              {/*       // keep using state instead of replacing url in UniversalLiquidity */}
+              {/*       handleFeePoolSelect({ type }) */}
+              {/*     }} */}
+              {/*   /> */}
+              {/* )} */}
 
               {!stableConfig.stableSwapConfig && selectorType === SELECTOR_TYPE.V3 && (
                 <FeeSelector

@@ -32,7 +32,7 @@ const sentryWebpackPluginOptions =
     : {
         hideSourceMaps: false,
         silent: true, // Suppresses all logs
-        dryRun: !process.env.SENTRY_AUTH_TOKEN,
+        // dryRun: !process.env.SENTRY_AUTH_TOKEN,
       }
 
 const workerDeps = Object.keys(smartRouterPkgs.dependencies)
@@ -127,6 +127,11 @@ const config = {
   async redirects() {
     return [
       {
+        source: '/',
+        destination: '/swap',
+        permanent: true,
+      },
+      {
         source: '/send',
         destination: '/swap',
         permanent: true,
@@ -215,6 +220,12 @@ const config = {
   },
 }
 
+const sentry = process.env.SENTRY_AUTH_TOKEN
 export default withBundleAnalyzer(
-  withVanillaExtract(withSentryConfig(withAxiom(withWebSecurityHeaders(config)), sentryWebpackPluginOptions)),
+  withVanillaExtract(
+    sentry ? 
+    withSentryConfig(withAxiom(withWebSecurityHeaders(config)), sentryWebpackPluginOptions)
+    : 
+    withAxiom(withWebSecurityHeaders(config))
+  ),
 )

@@ -16,12 +16,12 @@ const Page: React.FC<
   removePadding = false,
   hideFooterOnDesktop = false,
   noMinHeight = false,
-  helpUrl = EXCHANGE_HELP_URLS,
+  helpUrl = '', // EXCHANGE_HELP_URLS,
   ...props
 }) => {
   const { t } = useTranslation()
   const { chainId } = useActiveChainId()
-  const isBSC = chainId === ChainId.BSC
+  const isBSC = false // chainId === ChainId.BSC
   const externalText = isBSC ? t('Bridge assets to BNB Chain') : ''
   const externalLinkUrl = isBSC ? 'https://bridge.pancakeswap.finance/' : ''
 

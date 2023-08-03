@@ -44,7 +44,8 @@ const Menu = (props) => {
   }, [setTheme, isDark])
 
   const getFooterLinks = useMemo(() => {
-    return footerLinks(t)
+    return []
+    // return footerLinks(t)
   }, [t])
 
   return (
