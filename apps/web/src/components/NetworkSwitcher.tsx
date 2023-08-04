@@ -27,11 +27,6 @@ import { ASSET_CDN } from 'config/constants/endpoints'
 
 import { ChainLogo } from './Logo/ChainLogo'
 
-const AptosChain = {
-  id: 1,
-  name: 'Aptos',
-}
-
 const NetworkSelect = ({ switchNetwork, chainId }) => {
   const { t } = useTranslation()
 
@@ -58,24 +53,6 @@ const NetworkSelect = ({ switchNetwork, chainId }) => {
             </Text>
           </UserMenuItem>
         ))}
-      {/* <UserMenuItem
-        key={`aptos-${AptosChain.id}`}
-        style={{ justifyContent: 'flex-start' }}
-        as="a"
-        target="_blank"
-        href="https://aptos.pancakeswap.finance/swap"
-      >
-        <Image
-          src="https://aptos.pancakeswap.finance/images/apt.png"
-          width={24}
-          height={24}
-          unoptimized
-          alt={`chain-aptos-${AptosChain.id}`}
-        />{' '}
-        <Text color="text" pl="12px">
-          {AptosChain.name}
-        </Text>
-      </UserMenuItem> */}
     </>
   )
 }
